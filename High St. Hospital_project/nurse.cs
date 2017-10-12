@@ -6,7 +6,30 @@ using System.Threading.Tasks;
 
 namespace High_St.Hospital_project
 {
-    class nurse
+    class nurse:Hospital_employee
     {
+        protected string department;
+        protected int numberOfPatients;
+
+        public string Department
+        {
+            get { return this.department; }
+            set { this.department = value; }
+        }
+
+            public int NumberOfPatients
+        {
+            get { return this.numberOfPatients; }
+            set { this.numberOfPatients = value; }
+
+        }
+        public 
+
+        }
+
+
+
+
+
     }
 }
