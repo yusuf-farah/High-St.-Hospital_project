@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace High_St.Hospital_project
 {
-    class doctor:Hospital_employee
+   public class doctor:Hospital_employee
     {
        
         protected string specialtyarea;
@@ -22,14 +22,15 @@ namespace High_St.Hospital_project
       
         
 
-     public doctor(string doctorname, string  specialtyarea, int doctoremployeeid )
+     public doctor(string name, string  specialtyarea, int employeenumber )
         {
             this.name = name;
             this.specialtyarea = specialtyarea;
             this.employeenumber = employeenumber;
         }
-
-           
-
+        public override string ToString()
+        {
+            return this.name + " " + this.employeenumber + " " + specialtyarea;
+        }
     }
 }

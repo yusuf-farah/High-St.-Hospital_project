@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace High_St.Hospital_project
 {
-    class Hospital_employee
+  public  class Hospital_employee
     {   // fields 
-        protected string name;
+        protected  string name;
         protected int employeenumber;
         //properties
         public string Name
@@ -32,10 +32,10 @@ namespace High_St.Hospital_project
         
         }
         
-
-
-
-
+        public virtual string tostring()
+        {
+            return this.name + " " + this.employeenumber;
+        }
 
 
     }

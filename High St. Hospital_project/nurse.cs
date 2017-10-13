@@ -23,13 +23,19 @@ namespace High_St.Hospital_project
             set { this.numberOfPatients = value; }
 
         }
-        public 
-
+        public nurse(string department, int numberOfPatients, string name, int employeenumber)
+        {
+            this.department = department;
+            this.numberOfPatients = numberOfPatients;
+            this.name = name;
+            this.employeenumber = employeenumber;
         }
 
-
-
-
+        public override string ToString()
+        {
+           
+         return this.name + " " + this.employeenumber + " " + this.department + " " + this.numberOfPatients;
+        }
 
     }
 }

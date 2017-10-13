@@ -34,6 +34,10 @@ namespace High_St.Hospital_project
                 this.phone = phone; 
         }
 
-        
+        public override string tostring()
+        { string onphone = phone == true ? " on phone" : "not on the phone";
+            return this.name + " " + this.employeenumber + " " + this.department + " " + onphone;
+        }
+
     }
 }
